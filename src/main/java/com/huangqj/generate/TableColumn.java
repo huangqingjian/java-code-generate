@@ -36,6 +36,8 @@ public class TableColumn {
     public String getType() {
         if("int".equalsIgnoreCase(type)) {
             return "integer";
+        } else if("text".equalsIgnoreCase(type)) {
+            return "varchar";
         }
         return type;
     }
