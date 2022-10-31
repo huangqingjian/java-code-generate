@@ -38,6 +38,8 @@ public class TableColumn {
             return "integer";
         } else if("text".equalsIgnoreCase(type)) {
             return "varchar";
+        } else if("datetime".equalsIgnoreCase(type)) {
+            return "timestamp";
         }
         return type;
     }
