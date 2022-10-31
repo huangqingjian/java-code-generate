@@ -51,7 +51,7 @@ public class ${domain}ServiceImpl implements ${domain}Service {
         PageInfo<${domain}DTO> pageInfo = new PageInfo(domains);
         // 转换为PageDTO
         PageDTO<${domain}DTO> page = BeanUtils.map(pageInfo, PageDTO.class);
-        page.setList(BeanUtils.mapList(pageInfo.getList(), BannerDTO.class));
+        page.setList(BeanUtils.mapList(pageInfo.getList(), ${domain}DTO.class));
         return page;
     }
 
