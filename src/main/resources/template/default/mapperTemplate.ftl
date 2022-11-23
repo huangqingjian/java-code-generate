@@ -16,7 +16,7 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface ${domain}Mapper {
     /**
-     * 查询banner列表
+     * 查询列表
      *
      * @param queryBean
      * @return

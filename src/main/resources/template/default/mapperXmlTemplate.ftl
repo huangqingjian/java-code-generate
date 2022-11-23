@@ -3,11 +3,11 @@
 <mapper namespace="${mapperPackage}.${domain}Mapper" >
     <resultMap id="BaseResultMap" type="${domainPackage}.${domain}" >
         <#list table.columns as column>
-            <#if column.name == table.primaryColumn.name>
-            <id column="${column.name}" property="${column.propertyName}" jdbcType="${column.type?upper_case}" />
-            <#else>
-            <result column="${column.name}" property="${column.propertyName}" jdbcType="${column.type?upper_case}" />
-            </#if>
+        <#if column.name == table.primaryColumn.name>
+        <id column="${column.name}" property="${column.propertyName}" jdbcType="${column.type?upper_case}" />
+        <#else>
+        <result column="${column.name}" property="${column.propertyName}" jdbcType="${column.type?upper_case}" />
+        </#if>
         </#list>
     </resultMap>
     <sql id="Base_Column_List" >

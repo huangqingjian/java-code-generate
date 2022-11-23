@@ -7,6 +7,7 @@ import ${column.columnType.pkg};
 </#if>
 </#list>
 </#if>
+import ${dtoPackage}.BaseDTO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -18,7 +19,6 @@ import io.swagger.annotations.ApiModelProperty;
 */
 @ApiModel("${table.comment}DTO")
 public class ${domain}DTO {
-
 <#-- 循环属性名称 -->
 <#list table.columns as column>
     <#if column.comment??>

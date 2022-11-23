@@ -7,6 +7,7 @@ import ${column.columnType.pkg};
 </#if>
 </#list>
 </#if>
+import ${beanPackage}.BaseBean;
 
 /**
 * ${table.comment} Bean
@@ -15,7 +16,6 @@ import ${column.columnType.pkg};
 * date: ${date}
 */
 public class ${domain}Bean {
-
 <#-- 循环属性名称 -->
 <#list table.columns as column>
     <#if column.comment??>
