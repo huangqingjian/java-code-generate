@@ -29,6 +29,7 @@ public class Application {
         globalProperties.setBeanPackage("com.huangqj.bean");
         globalProperties.setDtoPackage("com.huangqj.dto");
         globalProperties.setMapperPackage("com.huangqj.mapper");
+        globalProperties.setUtilPackage("com.huangqj.utils");
         globalProperties.setMapperXmlPath("mapper");
         globalProperties.setServicePackage("com.huangqj.service");
         globalProperties.setControllerPackage("com.huangqj.controller");

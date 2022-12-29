@@ -1,8 +1,8 @@
 package com.huangqj.service;
 
-import com.huangqj.common.dto.*;
 import com.huangqj.dto.BannerDTO;
-import com.huangqj.domain.Banner;
+import com.huangqj.dto.PageDTO;
+import com.huangqj.dto.PageQueryDTO;
 
 /**
  * banner服务

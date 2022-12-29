@@ -1,4 +1,4 @@
-package com.huangqj.common.dto;
+package com.huangqj.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

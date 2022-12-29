@@ -1,4 +1,4 @@
-package com.huangqj.common.dto;
+package com.huangqj.dto;
 
 import com.github.pagehelper.Page;
 import io.swagger.annotations.ApiModel;
