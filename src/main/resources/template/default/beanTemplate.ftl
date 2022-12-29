@@ -15,7 +15,7 @@ import ${beanPackage}.BaseBean;
 * author: ${author}
 * date: ${date}
 */
-public class ${domain}Bean {
+public class ${domain}Bean extends BaseBean {
 <#-- 循环属性名称 -->
 <#list table.columns as column>
     <#if column.comment??>

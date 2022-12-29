@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiModelProperty;
 * date: ${date}
 */
 @ApiModel("${table.comment}DTO")
-public class ${domain}DTO {
+public class ${domain}DTO extends BaseDTO {
 <#-- 循环属性名称 -->
 <#list table.columns as column>
     <#if column.comment??>

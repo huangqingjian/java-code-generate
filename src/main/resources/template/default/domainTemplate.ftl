@@ -7,7 +7,7 @@ import ${column.columnType.pkg};
 </#if>
 </#list>
 </#if>
-import ${domainPackage}.BaseDTO;
+import ${domainPackage}.BaseDomain;
 
 /**
  * ${table.comment}
@@ -15,7 +15,7 @@ import ${domainPackage}.BaseDTO;
  * author: ${author}
  * date: ${date}
  */
-public class ${domain} {
+public class ${domain} extends BaseDomain {
 <#-- 循环属性名称 -->
 <#list table.columns as column>
 <#if column.comment??>
