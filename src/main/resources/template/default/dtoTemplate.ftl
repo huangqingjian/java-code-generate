@@ -21,6 +21,7 @@ public class ${domain}DTO {
 
 <#-- 循环属性名称 -->
 <#list table.columns as column>
+    <#if excludeFields?index_of(column) == -1>
     <#if column.comment??>
     /**
      * ${column.comment}
@@ -28,11 +29,12 @@ public class ${domain}DTO {
     @ApiModelProperty("${column.comment}")
     </#if>
     private ${column.propertyType} ${column.propertyName};
-
+    </#if>
 </#list>
 
 <#-- 循环set/get方法 -->
 <#list table.columns as column>
+    <#if excludeFields?index_of(column) == -1>
     public ${column.propertyType} get${column.propertyName?cap_first}() {
         return ${column.propertyName};
     }
@@ -40,6 +42,6 @@ public class ${domain}DTO {
     public void set${column.propertyName?cap_first}(${column.propertyType} ${column.propertyName}) {
         this.${column.propertyName} = ${column.propertyName};
     }
-
+    </#if>
 </#list>
 }
