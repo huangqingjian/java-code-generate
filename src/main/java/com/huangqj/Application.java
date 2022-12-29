@@ -34,6 +34,7 @@ public class Application {
         globalProperties.setServicePackage("com.huangqj.service");
         globalProperties.setControllerPackage("com.huangqj.controller");
         globalProperties.setTableNames(new String[]{"tbl_banner"});
+        globalProperties.setExcludeFields("");
         //生成的实体移除前缀
         globalProperties.setPrefix(new String[]{"tbl_"});
         globalProperties.setOutputDir("");

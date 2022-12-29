@@ -61,6 +61,10 @@ public class GlobalProperties {
      */
     private String[] prefix = {"tbl_"};
     /**
+     * 排除字段
+     */
+    private String excludeFields = "deleted,create_time,update_time,create_by,update_by";
+    /**
      * 作者
      */
     private String author = "huangqj";
@@ -175,6 +179,14 @@ public class GlobalProperties {
 
     public void setPrefix(String[] prefix) {
         this.prefix = prefix;
+    }
+
+    public String getExcludeFields() {
+        return excludeFields;
+    }
+
+    public void setExcludeFields(String excludeFields) {
+        this.excludeFields = excludeFields;
     }
 
     public String getAuthor() {
