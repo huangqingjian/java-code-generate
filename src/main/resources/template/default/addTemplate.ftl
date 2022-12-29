@@ -10,6 +10,7 @@
         <div class="main-container">
             <#if table.columns?? && table.columns?size gt 0>
             <#list table.columns as column>
+            <#if excludeFields?index_of(column) == -1>
             <#if column.name != table.primaryColumn.name>
             <div class="layui-form-item">
                 <label class="layui-form-label">${column.comment}</label>
@@ -17,6 +18,7 @@
                     <input type="text" name="${column.propertyName}" lay-verify="title" autocomplete="off" placeholder="请输入${column.comment}" class="layui-input">
                 </div>
             </div>
+            </#if>
             </#if>
             </#list>
             </#if>
