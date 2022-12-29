@@ -2,7 +2,7 @@ package com.huangqj.mapper;
 
 import com.huangqj.domain.Banner;
 import java.util.List;
-import com.huangqj.common.bean.PageQueryBean;
+import com.huangqj.bean.PageQueryBean;
 import org.apache.ibatis.annotations.Param;
 
 /**

@@ -1,4 +1,4 @@
-package com.huangqj.common.bean;
+package com.huangqj.bean;
 
 /**
  * 分页查询DTO

@@ -41,6 +41,10 @@ public class GlobalProperties {
      */
     private String mapperPackage = "com.huangqj.mapper";
     /**
+     * util包名
+     */
+    private String utilPackage = "com.huangqj.utils";
+    /**
      * mapper xml路径
      */
     private String mapperXmlPath = "";
@@ -131,6 +135,14 @@ public class GlobalProperties {
 
     public void setMapperPackage(String mapperPackage) {
         this.mapperPackage = mapperPackage;
+    }
+
+    public String getUtilPackage() {
+        return utilPackage;
+    }
+
+    public void setUtilPackage(String utilPackage) {
+        this.utilPackage = utilPackage;
     }
 
     public String getMapperXmlPath() {

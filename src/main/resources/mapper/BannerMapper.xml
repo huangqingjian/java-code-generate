@@ -27,7 +27,7 @@
             `update_by`,
             `update_time`
     </sql>
-    <select id="selectByQuery" resultMap="BaseResultMap" parameterType="com.huangqj.common.bean.PageQueryBean" >
+    <select id="selectByQuery" resultMap="BaseResultMap" parameterType="com.huangqj.bean.PageQueryBean" >
         select
         <include refid="Base_Column_List" />
         from tbl_banner

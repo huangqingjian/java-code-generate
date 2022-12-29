@@ -1,6 +1,7 @@
 package ${servicePackage};
 
-import com.huangqj.common.dto.*;
+import ${dtoPackage}.PageQueryDTO;
+import ${dtoPackage}.PageDTO;
 import ${dtoPackage}.${domain}DTO;
 import ${domainPackage}.${domain};
 <#if table.primaryColumn?? && table.primaryColumn.columnType?? && table.primaryColumn.columnType.pkg?? && !table.primaryColumn.columnType.autoImported>

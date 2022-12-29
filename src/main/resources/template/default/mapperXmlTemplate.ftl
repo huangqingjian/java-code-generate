@@ -15,7 +15,7 @@
             `${column.name}`<#if column_has_next>,</#if>
         </#list>
     </sql>
-    <select id="selectByQuery" resultMap="BaseResultMap" parameterType="com.huangqj.common.bean.PageQueryBean" >
+    <select id="selectByQuery" resultMap="BaseResultMap" parameterType="com.huangqj.bean.PageQueryBean" >
         select
         <include refid="Base_Column_List" />
         from ${table.name}

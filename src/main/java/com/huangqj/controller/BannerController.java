@@ -1,8 +1,10 @@
 package com.huangqj.controller;
 
 import com.huangqj.dto.BannerDTO;
+import com.huangqj.dto.PageDTO;
+import com.huangqj.dto.PageQueryDTO;
+import com.huangqj.dto.ResponseDTO;
 import com.huangqj.service.BannerService;
-import com.huangqj.common.dto.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
