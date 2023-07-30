@@ -187,6 +187,8 @@ public class CodeGenerate {
         data.put("mapperPackage",globalProperties.getMapperPackage());
         data.put("author", globalProperties.getAuthor());
         data.put("date",  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+        data.put("excludeFields",  globalProperties.getExcludeFields());
+        data.put("utilPackage",  globalProperties.getUtilPackage());
         return data;
     }
 }

@@ -37,35 +37,35 @@ public class ${domain}Controller {
     private ${domain}Service ${domain?uncap_first}Service;
 
     /**
-     * ${domain}列表页
+     * ${table.comment}列表页
      *
      * @return
      */
-    @ApiOperation(value = "${domain}列表页")
+    @ApiOperation(value = "${table.comment}列表页")
     @RequestMapping(value = "list.html")
     public String list() {
         return LIST;
     }
 
     /**
-     * ${domain}新增页
+     * ${table.comment}新增页
      *
      * @return
      */
-    @ApiOperation(value = "${domain}新增页")
+    @ApiOperation(value = "${table.comment}新增页")
     @RequestMapping(value = "add.html")
     public String add() {
         return ADD;
     }
 
     /**
-     * ${domain}编辑页
+     * ${table.comment}编辑页
      *
      * @param ${table.primaryColumn.propertyName}
      * @param model
      * @return
      */
-    @ApiOperation(value = "${domain}编辑页")
+    @ApiOperation(value = "${table.comment}编辑页")
     @RequestMapping(value = "/{${table.primaryColumn.propertyName}}.html")
     public String edit(@PathVariable("${table.primaryColumn.propertyName}") ${table.primaryColumn.columnType.type} ${table.primaryColumn.propertyName}, Model model) {
         model.addAttribute("${table.primaryColumn.propertyName}", ${table.primaryColumn.propertyName});
@@ -73,13 +73,13 @@ public class ${domain}Controller {
     }
 
     /**
-     * ${domain}详情页
+     * ${table.comment}详情页
      *
      * @param ${table.primaryColumn.propertyName}
      * @param model
      * @return
      */
-    @ApiOperation(value = "${domain}详情页")
+    @ApiOperation(value = "${table.comment}详情页")
     @RequestMapping(value = "detail/{${table.primaryColumn.propertyName}}.html")
     public String detail(@PathVariable("${table.primaryColumn.propertyName}") ${table.primaryColumn.columnType.type} ${table.primaryColumn.propertyName}, Model model) {
         model.addAttribute("${table.primaryColumn.propertyName}", ${table.primaryColumn.propertyName});
@@ -87,12 +87,12 @@ public class ${domain}Controller {
     }
 
     /**
-     * ${domain}列表
+     * ${table.comment}列表
      *
      * @param queryDTO
      * @return
      */
-    @ApiOperation(value = "${domain}列表")
+    @ApiOperation(value = "${table.comment}列表")
     @GetMapping(value = "list")
     @ResponseBody
     public ResponseDTO<PageDTO<${domain}DTO>> list(PageQueryDTO queryDTO) {
@@ -101,12 +101,12 @@ public class ${domain}Controller {
     }
 
     /**
-     * ${domain}查找
+     * ${table.comment}查找
      *
      * @param ${table.primaryColumn.propertyName}
      * @return
      */
-    @ApiOperation(value = "${domain}查找")
+    @ApiOperation(value = "${table.comment}查找")
     @GetMapping(value = "get/{${table.primaryColumn.propertyName}}")
     @ResponseBody
     public ResponseDTO<${domain}DTO> get(@PathVariable("${table.primaryColumn.propertyName}") ${table.primaryColumn.columnType.type} ${table.primaryColumn.propertyName}) {
@@ -115,12 +115,12 @@ public class ${domain}Controller {
     }
 
     /**
-     * ${domain}新增
+     * ${table.comment}新增
      *
      * @param dto
      * @return
      */
-    @ApiOperation(value = "${domain}新增")
+    @ApiOperation(value = "${table.comment}新增")
     @PostMapping(value = "save")
     @ResponseBody
     public ResponseDTO<${table.primaryColumn.columnType.type}> save(@RequestBody ${domain}DTO dto) {
@@ -129,12 +129,12 @@ public class ${domain}Controller {
     }
 
     /**
-     * ${domain}更新
+     * ${table.comment}更新
      *
      * @param dto
      * @return
      */
-    @ApiOperation(value = "${domain}更新")
+    @ApiOperation(value = "${table.comment}更新")
     @PostMapping(value = "update")
     @ResponseBody
     public ResponseDTO<Long> update(@RequestBody ${domain}DTO dto) {
@@ -143,12 +143,12 @@ public class ${domain}Controller {
     }
 
     /**
-     * ${domain}删除
+     * ${table.comment}删除
      *
      * @param ${table.primaryColumn.propertyName}
      * @return
      */
-    @ApiOperation(value = "${domain}删除")
+    @ApiOperation(value = "${table.comment}删除")
     @PostMapping(value = "delete/{${table.primaryColumn.propertyName}}")
     @ResponseBody
     public ResponseDTO<Boolean> delete(@PathVariable("${table.primaryColumn.propertyName}") ${table.primaryColumn.columnType.type} ${table.primaryColumn.propertyName}) {

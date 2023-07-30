@@ -12,7 +12,7 @@
     </resultMap>
     <sql id="Base_Column_List" >
         <#list table.columns as column>
-            `${column.name}`<#if column_has_next>,</#if>
+        `${column.name}`<#if column_has_next>,</#if>
         </#list>
     </sql>
     <select id="selectByQuery" resultMap="BaseResultMap" parameterType="com.huangqj.bean.PageQueryBean" >

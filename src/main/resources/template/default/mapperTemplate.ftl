@@ -5,7 +5,7 @@ import java.util.List;
 <#if table.primaryColumn?? && table.primaryColumn.columnType?? && table.primaryColumn.columnType.pkg?? && !table.primaryColumn.columnType.autoImported>
     import ${table.primaryColumn.columnType.pkg};
 </#if>
-import com.huangqj.common.bean.PageQueryBean;
+import ${beanPackage}.PageQueryBean;
 import org.apache.ibatis.annotations.Param;
 
 /**
